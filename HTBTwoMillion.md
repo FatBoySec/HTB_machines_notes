@@ -1,5 +1,5 @@
 
-1 - RECON
+### 1 - HOST RECON
 
 nmap -A -T4 10.10.11.221     
 Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-11 01:02 -03
@@ -35,7 +35,7 @@ PORT   STATE SERVICE VERSION
 |_      httponly flag not set
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-2 - WEB RECON
+### 2 - WEB RECON
 
 200      GET       80l      232w     3704c http://2million.htb/login
 200      GET       94l      293w     4527c http://2million.htb/register
@@ -47,9 +47,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 200      GET       46l      152w     1674c http://2million.htb/404
 
 
-## WEB FINDINGS
+### WEB FINDINGS
 
-### IN URLS FIND JS FILES TO VALIDATE INVITE
+#### IN URLS FIND JS FILES TO VALIDATE INVITE
 
 http://2million.htb/register
 http://2million.htb/js/inviteapi.min.js
